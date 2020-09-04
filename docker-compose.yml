@@ -4,7 +4,7 @@ services:
   # Install postgres and setup the student database.
   postgres:
     container_name: postgres
-    image: debezium/postgres
+    image: debezium/postgres:10.0-alpine
     ports:
       - 5432:5432
     environment:
